@@ -6,6 +6,7 @@ using System.Linq;
 using System.Reflection;
 using System.Web;
 using System.Web.Http;
+using Voter.Core.Domains.Services.Vote;
 using Voter.Core.Domains.Services.Vote.Votes;
 using Voter.Core.Services.RandomVotes;
 
@@ -29,11 +30,8 @@ namespace Voter.Web.Mvc
             container.RegisterMvcIntegratedFilterProvider();
 
             // core
-            container.Register<IVoteService, RandomVoteService>(Lifestyle.Scoped);
-
-            //Core.Domains.SimpleCoreContainerHelper.Build(container);
-            //SimpleCoreContainerHelper.Build(container);
-            //Encore.SimpleEncoreContainerHelper.Build(container);
+            // container.Register<IVoteService, RandomVoteService>(Lifestyle.Scoped);
+            container.Register<IVoteService, MemoryVoteService>(Lifestyle.Scoped);
 
             // web
             SimpleWebContainerHelper.Build(container);

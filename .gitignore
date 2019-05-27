@@ -20,3 +20,7 @@
 /Voter/Voter.Web02/obj/Debug
 /Voter/Voter.Web01/bin
 /Voter/Voter.Web01/obj/Debug
+/Voter/Voter.Web/dev.connectionStrings.config
+/Voter/Voter.Web01/obj/Release
+/Voter/Voter.Web02/obj/Release
+/Voter/Voter.Web03/obj/Release

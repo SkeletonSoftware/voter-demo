@@ -11,6 +11,7 @@ namespace Voter.Web.Controllers.Vote.Votes
 {
     public partial class VoteController : BaseController
     {
+        // Vote/Index
         public ActionResult Index(ListVoteFilterModel model)
         {
             //var data = new ListVoteBuilder(_voteService).Build(model);

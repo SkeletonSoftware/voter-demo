@@ -36,9 +36,9 @@ void setup() {
     delay(1000);
   }
 
-  // WiFi.begin(nazevWifi, hesloWifi);
+  WiFi.begin(nazevWifi, hesloWifi);
   WiFi.mode(WIFI_STA);
-  WiFiMulti.addAP(nazevWifi, hesloWifi);
+  //WiFiMulti.addAP(nazevWifi, hesloWifi);
   
   while (WiFi.status() != WL_CONNECTED) {
     digitalWrite(GREEN_LED, HIGH);
