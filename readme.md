@@ -18,6 +18,8 @@ Nejde tedy o Arduino desku, jen využívá layout Arduina Uno!
 
 ![Schéma](Arduino/schema_bb.png?raw=true)
 
+**Pozn.: RGB LED dioda obsahuje předřazené odpory, proto nejsou ve schématu zakresleny!**
+
 ### Seznam součástek ###
 
 <table>
